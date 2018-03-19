@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Principal - Root</ion-title>
+
+    <!-- creamos menu con un click que este metodo lo tratamos en principañ.ts  -->
+    <ion-buttons>
+      <button ion-button
+              ion-only
+              (click)="mostrarMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <button ion-button
+          block
+          color="primary"
+          (click)="navegarPagina()">
+    Ir pagina 2
+
+  </button>
+
+  <button ion-button
+          block
+          color="secondary"
+          [navPush]="pagina2">
+    Ir pagina 2 - HTML
+
+  </button>
+
+</ion-content>

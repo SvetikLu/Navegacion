@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Ajustes</ion-title>
+
+    <!-- creamos el menu solo con menuToggle -->
+    <ion-buttons>
+      <button ion-button
+              ion-only
+              menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <button ion-button
+          block
+          (click)="activarPrincipal()">
+    Activar ajuste
+  </button>
+
+  <button ion-button=""
+          block
+          color="morado"
+          (click)="mostrarModall()">
+    Mostrar modal
+  </button>
+
+</ion-content>
